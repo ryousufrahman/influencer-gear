@@ -7,3 +7,152 @@
     margin: 0;
     padding: 0;
 }
+ /* shared desing */
+ header{
+  width: 78%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  
+ }
+ .brand-container{
+  width: 77%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+ 
+ .primary-btn{
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 24px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 1000px;
+  background-color: #E02C6D;
+  cursor: pointer;
+ }
+
+/* navbar desing */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h4{
+  font-size:1.5rem ;
+  font-weight: bold;
+  color: #3A3A3A;
+}
+.nav-items-container ul{
+  display: flex;
+  align-items: center;
+  gap:2rem ;
+
+}
+.nav-items-container ul li{
+  list-style: none;
+}
+.nav-items-container ul li a {
+  text-decoration: none;
+  color:#3A3A3A ;
+  font-size: 1rem;
+}
+
+/* hero section design */
+.hero-container{
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 3rem;
+}
+.hero-text h1{
+  color: #3A3A3A;
+  font-size: 3.25rem;
+  font-weight: bold;
+
+}
+
+.hero-text p{
+  color: #3A3A3A;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.hero-img{
+  background-image: url(../images/Circle\ design.svg);
+  background-position: center;
+  
+}
+
+/* brands desing */
+.brand-container{
+  display:flex;
+  gap: 61px;
+  border-top: 2px solid rgba(128, 128, 128 , .3);;
+  border-bottom: 2px solid rgba(128, 128, 128 , .3);
+  padding: 36px 62px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+
+@media  screen and (max-width:576px) {
+
+  header{
+  width: 100%;}
+  .navbar{
+  display: flex;
+  flex-direction:column;
+  gap: 20px;
+  justify-content:center;
+  
+}
+     ul {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+     }
+    .hero-container{
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 20px;
+     
+    }
+    .hero-container h1 p {
+      text-align: center;
+    }
+    .hero-container h1{
+      font-size: 1.75rem;
+    }
+    .hero-text{
+      margin-left: 29px;
+      margin-right: 10px;
+    }
+  .hero-img{
+    background: none;
+    
+  }
+  .hero-img img{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .brand-container{
+  justify-content: center;
+  gap: 10px;
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+  .brand-container {
+    display: flex;
+  flex-wrap: wrap;
+  margin-left: 42px;
+  margin-right: 42px;
+  padding: 10px;
+    
+  }
+}
+
+
